@@ -1,4 +1,4 @@
-# Login and Activity Logs in 
+# Login and Activity Logs in Laravel
 Laravel package to log each user's activity in the system and include api token based login using sanctum
 ## Installation
 
@@ -27,7 +27,7 @@ class User extends Authenticatable
 }
 ```
 
-# Activity Logs usage
+# Activity Logs
 
 ## Setup Migrations and Model
 
