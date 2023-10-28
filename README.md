@@ -1,4 +1,4 @@
-# Activity logs
+# Login and Activity Logs in one plugin
 Laravel package to log each user's activity in the system and include api token based login using sanctum
 
 ### Publish the Sanctum configuration and migration files using the vendor:publish Artisan command. The sanctum configuration file will be placed in your application's config directory:
