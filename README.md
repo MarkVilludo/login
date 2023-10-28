@@ -1,5 +1,12 @@
-# Login and Activity Logs in Laravel
+# Login and Activity Logs in 
 Laravel package to log each user's activity in the system and include api token based login using sanctum
+## Installation
+
+Require this package with composer.
+
+```shell
+composer require mark-villudo/login-activiy-logs
+```
 
 ### Publish the Sanctum configuration and migration files using the vendor:publish Artisan command. The sanctum configuration file will be placed in your application's config directory:
 ```
@@ -20,18 +27,7 @@ class User extends Authenticatable
 }
 ```
 
-## Usage after Installed package.
-```
-storeActivity('user type' , 'User Action', 'Description');
-
-```
-## Installation
-
-Require this package with composer.
-
-```shell
-composer require mark-villudo/activity-logs
-```
+# Activity Logs usage
 
 ## Setup Migrations and Model
 
