@@ -1,5 +1,24 @@
 # Activity logs
-Laravel package to log each user's activity in the system.
+Laravel package to log each user's activity in the system and include api token based login using sanctum
+
+### Publish the Sanctum configuration and migration files using the vendor:publish Artisan command. The sanctum configuration file will be placed in your application's config directory:
+```
+php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+```
+### Finally, you should run your database migrations. Sanctum will create one database table in which to store API tokens:
+```
+php artisan migrate
+
+```
+### To begin issuing tokens for users, your User model should use the Laravel\Sanctum\HasApiTokens trait:
+```
+use Laravel\Sanctum\HasApiTokens;
+ 
+class User extends Authenticatable
+{
+    use HasApiTokens, HasFactory, Notifiable;
+}
+```
 
 ## Usage after Installed package.
 ```
