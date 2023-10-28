@@ -1,0 +1,30 @@
+{
+    "name": "mark-villudo/login",
+    "description": "Laravel package API for user login using sunctum",
+    "keywords": [
+        "laravel",
+        "api",
+        "login-laravel",
+        "token-based",
+        "login",
+        "activiy-logs"
+    ],
+    "authors": [
+        {
+            "name": "Mark Villudo"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "laravel/sanctum": "^2.x-dev"
+    },
+    "autoload": {
+        "psr-0": {
+            "MarkVilludo\\LoginActivityLogs\\": "src/"
+        },
+        "files": [
+            "src/helper.php"
+        ]
+    },
+    "minimum-stability": "dev"
+}
